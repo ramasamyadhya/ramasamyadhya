@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adhya Ramasamy | Personal Portfolio</title>
+
+<style>
+:root{
+    --dark:#463F3A;
+    --mid:#8A817C;
+    --light:#BCB8B1;
+    --bg:#F4F3EE;
+    --accent:#E0AFA0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background:var(--bg);
+    color:var(--dark);
+    line-height:1.7;
+}
+
+header{
+    background:linear-gradient(135deg,var(--dark),var(--mid));
+    color:white;
+    padding:70px 8%;
+}
+
+.hero{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1 1 500px;
+}
+
+.hero-text h1{
+    font-size:3.2rem;
+    margin-bottom:10px;
+}
+
+.hero-text h2{
+    color:var(--accent);
+    font-weight:400;
+    margin-bottom:25px;
+}
+
+.hero-text p{
+    max-width:700px;
+    font-size:1.05rem;
+}
+
+.photo{
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    overflow:hidden;
+    border:8px solid rgba(255,255,255,.15);
+    background:#ddd;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.photo .placeholder{
+    color:#666;
+    text-align:center;
+    padding:20px;
+    font-size:.95rem;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 8%;
+}
+
+.section-title{
+    font-size:2rem;
+    margin-bottom:25px;
+    color:var(--dark);
+    position:relative;
+}
+
+.section-title:after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    background:var(--accent);
+    margin-top:10px;
+    border-radius:3px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:var(--dark);
+}
+
+.card ul{
+    padding-left:18px;
+}
+
+.card li{
+    margin-bottom:10px;
+}
+
+.timeline{
+    display:grid;
+    gap:20px;
+}
+
+.item{
+    background:white;
+    border-left:6px solid var(--accent);
+    padding:22px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,.07);
+}
+
+.item h3{
+    margin-bottom:8px;
+}
+
+.contact{
+    text-align:center;
+    background:var(--dark);
+    color:white;
+}
+
+.contact a{
+    color:var(--accent);
+    text-decoration:none;
+    font-size:1.1rem;
+}
+
+footer{
+    background:#3d3732;
+    color:#ddd;
+    text-align:center;
+    padding:20px;
+    font-size:.9rem;
+}
+
+@media(max-width:800px){
+
+.hero{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:2.4rem;
+}
+
+.photo{
+    margin:auto;
+}
+
+}
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="hero">
+
+<div class="hero-text">
+
+<h1>Adhya Ramasamy</h1>
+
+<h2>High School Student • Business • Leadership • Innovation</h2>
+
+<p>
+I'm a high school student from the Bay Area with a passion for business, leadership, and creating meaningful impact through innovation. I enjoy exploring how strategy, collaboration, and curiosity come together to solve real-world problems while continuously learning from every new opportunity.
+</p>
+
+</div>
+
+<div class="photo">
+    <img src="photo.jpg" alt="Profile Photo"
+         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+    <div class="placeholder" style="display:none;">
+        <div>
+            <strong>Profile Photo</strong><br>
+            Replace with<br>
+            <em>photo.jpg</em>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</header>
+
+<section>
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+
+<p>
+I’m Adhya Ramasamy, a rising high school sophomore from the Bay Area with a passion for business, leadership, and understanding people. I’m fascinated by the way innovative ideas become meaningful solutions through teamwork, thoughtful planning, and creative problem-solving. Whether developing sustainable business concepts, mentoring younger students, or taking on leadership roles in my community, I enjoy finding opportunities to learn, collaborate, and make a positive impact.
+</p>
+
+<p>
+My long-term goal is to pursue a career in business, where I can combine strategic thinking with a deep understanding of people and organizations. I believe the strongest leaders never stop learning, and I’m excited to continue building new skills, exploring emerging ideas, and contributing to projects that create lasting value for both communities and businesses.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Business & Strategy</h3>
+
+<ul>
+<li>Market Research</li>
+<li>Business Plan Development</li>
+<li>Financial Analysis</li>
+<li>Sustainable Product Strategy</li>
+<li>Entrepreneurship</li>
+<li>Brand Awareness</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Leadership & Communication</h3>
+
+<ul>
+<li>Public Speaking & Pitching</li>
+<li>Team Leadership</li>
+<li>Peer Mentoring</li>
+<li>Conflict Resolution</li>
+<li>Cross-Functional Collaboration</li>
+<li>Social Media Content Creation</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Experience & Activities</h2>
+
+<p style="margin-bottom:35px;">
+My experiences have allowed me to grow as both a leader and a problem solver across business, education, athletics, and community service. From mentoring students in Taekwondo and leading hands-on STEAM activities to developing sustainable business solutions and exploring neuroscience, each opportunity has strengthened my ability to collaborate, communicate, and think creatively under new challenges.
+</p>
+
+<p style="margin-bottom:35px;">
+These experiences have reinforced my belief that leadership is about empowering others while continuing to grow yourself. Whether analyzing investment strategies, officiating competitive soccer matches, or presenting innovative business ideas, I enjoy working with diverse teams, embracing responsibility, and applying what I learn to make a meaningful impact.
+</p>
+
+<div class="timeline">
+
+<div class="item">
+<h3>🥋 Taekwondo Leadership</h3>
+<p>Earned a Taekwondo Black Belt and mentored younger students while developing leadership, discipline, and coaching skills.</p>
+</div>
+
+<div class="item">
+<h3>🚀 Camp Galileo</h3>
+<p>Guided students through hands-on STEAM projects, encouraging creativity, collaboration, and problem-solving.</p>
+</div>
+
+<div class="item">
+<h3>💡 UC Berkeley Haas B-BAY</h3>
+<p>Designed "Sustain-a-care," an eco-friendly business concept focused on sustainability, entrepreneurship, and product strategy.</p>
+</div>
+
+<div class="item">
+<h3>🏆 Los Altos Investment Bowl</h3>
+<p>Led a team that earned the <strong>Most Sustainable Portfolio Award</strong> through thoughtful investment analysis and collaboration.</p>
+</div>
+
+<div class="item">
+<h3>⚽ USSF Soccer Referee</h3>
+<p>Certified youth soccer referee responsible for making fair decisions, communicating clearly, and managing games under pressure.</p>
+</div>
+
+<div class="item">
+<h3>🧠 Stanford CNI-X</h3>
+<p>Explored consumer decision-making and productivity by studying the intersection of neuroscience and business.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="section-title" style="color:white;">Contact</h2>
+
+<p style="margin-bottom:20px;">
+I'd love to connect and learn from new opportunities, experiences, and collaborations.
+</p>
+
+<a href="mailto:ramasamyadhya@gmail.com">
+ramasamyadhya@gmail.com
+</a>
+
+</section>
+
+<footer>
+
+© <span id="year"></span> Adhya Ramasamy • Personal Portfolio
+
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
